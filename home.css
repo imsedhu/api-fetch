@@ -15,3 +15,8 @@ footer {
   color: white !important;
 }
 
+.con1 #name,
+.con1 #email {
+  font-size: 10px;
+}
+
