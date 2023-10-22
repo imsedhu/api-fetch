@@ -14,7 +14,7 @@
   <!-- header -->
   <nav class="navbar bg-primary  navbar-expand-lg bg-black border-bottom mb-5 position-sticky top-0 z-3 " data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand text-primary ms-5 fw-bold " href="#">To-Do-List</a>
+      <a class="navbar-brand text-white ms-5 fw-bold " href="#">To-Do-List</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,122 +34,31 @@
     </div>
   </nav>
 
-  <!-- main -->
-  <div class="container d-flex flex-column justify-content-center align-items-center    " id="con">
-    <h2 class="mb-5 text-center ">User Reviews</h2>
+
+     <!-- main -->
+  <div class="container" id="con">
+    <h2 class="mb-5 text-center text-warning  ">User Reviews</h2>
     <div class="row">
-      <div class="col-lg-4 col-md-4 col-12 ms-2">
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem;" id="card">
+      <div id="showCard" class="col-lg-12 col-md-12 col-12 p-0 ">
+        <div class="card text-bg-primary mb-3 ms-1" style="max-width: 100%;" id="card">
           <div class="card-header row">
             <div class="col-12 d-flex align-items-center" id="con1">
-              <i class="fa fa-user text-white me-1"></i>
-              <p class="mb-0" id="name">name</p> 
+              <i class="fa fa-user text-white me-1" id="icon"></i>
+              <p class="mb-0" id="name">name</p>
             </div>
             <div class="col-12 d-flex align-items-center" id="con1">
-              <i class="fa fa-envelope me-1 text-white"></i>
+              <i class="fa fa-envelope me-1 text-white" id="icon"></i>
               <p class="mb-0" id="email">email</p>
             </div>
           </div>
           <div class="card-body">
-            <p class="card-title fw-medium">Review :</p>
+            <p class="card-title fw-medium" id="review">Review :</p>
             <p class="card-text" id="comment">content</p>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-12 ms-2">
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem;" id="card">
-          <div class="card-header row">
-            <div class="col-12 d-flex align-items-center" id="con1">
-              <i class="fa fa-user text-white me-1"></i>
-              <p class="mb-0" id="name1">name</p> 
-            </div>
-            <div class="col-12 d-flex align-items-center" id="con1">
-              <i class="fa fa-envelope me-1 text-white"></i>
-              <p class="mb-0" id="email1">email</p>
-            </div>
-          </div>
-          <div class="card-body">
-            <p class="card-title fw-medium">Review :</p>
-            <p class="card-text" id="comment1">content</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-12 ms-2">
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem;" id="card">
-          <div class="card-header row">
-            <div class="col-12 d-flex align-items-center" id="con1">
-              <i class="fa fa-user text-white me-1"></i>
-              <p class="mb-0" id="name2">name</p> 
-            </div>
-            <div class="col-12 d-flex align-items-center" id="con1">
-              <i class="fa fa-envelope me-1 text-white"></i>
-              <p class="mb-0" id="email2">email</p>
-            </div>
-          </div>
-          <div class="card-body">
-            <p class="card-title fw-medium">Review :</p>
-            <p class="card-text" id="comment2">content</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-12 ms-2">
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem;" id="card">
-          <div class="card-header row">
-            <div class="col-12 d-flex align-items-center" id="con1">
-              <i class="fa fa-user text-white me-1"></i>
-              <p class="mb-0" id="name3">name</p> 
-            </div>
-            <div class="col-12 d-flex align-items-center" id="con1">
-              <i class="fa fa-envelope me-1 text-white"></i>
-              <p class="mb-0" id="email3">email</p>
-            </div>
-          </div>
-          <div class="card-body">
-            <p class="card-title fw-medium">Review :</p>
-            <p class="card-text" id="comment3">content</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-12 ms-2">
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem;" id="card">
-          <div class="card-header row">
-            <div class="col-12 d-flex align-items-center" id="con1">
-              <i class="fa fa-user text-white me-1"></i>
-              <p class="mb-0" id="name4">name</p> 
-            </div>
-            <div class="col-12 d-flex align-items-center" id="con1">
-              <i class="fa fa-envelope me-1 text-white"></i>
-              <p class="mb-0" id="email4">email</p>
-            </div>
-          </div>
-          <div class="card-body">
-            <p class="card-title fw-medium" id="review">Review :</p>
-            <p class="card-text" id="comment4">content</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-12 ms-2">
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem;" id="card">
-          <div class="card-header row">
-            <div class="col-12 d-flex align-items-center" id="con1">
-              <i class="fa fa-user text-white me-1"></i>
-              <p class="mb-0" id="name5">name</p> 
-            </div>
-            <div class="col-12 d-flex align-items-center" id="con1">
-              <i class="fa fa-envelope me-1 text-white"></i>
-              <p class="mb-0" id="email5">email</p>
-            </div>
-          </div>
-          <div class="card-body">
-            <p class="card-title fw-medium">Review :</p>
-            <p class="card-text" id="comment5">content</p>
-          </div>
-        </div>
-      </div>
     </div>
-    
   </div>
-  
 
   <!-- footer -->
   <div class="container">

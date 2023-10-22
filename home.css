@@ -7,6 +7,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+:root {
+  --first : #192655;
+  --second: #F3F0CA;
+  --third: #E1AA74;
+}
+
 body {
   color: white !important;
 }
@@ -19,4 +25,16 @@ footer {
 .con1 #email {
   font-size: 10px;
 }
+#review {
+  color: var(--third) !important;
+  font-size: 20px;
+}
+#icon {
+  color: var(--third) !important;
+  width: 20px;
+  font-size: 20px;
+}
 
+#card {
+  background-color: var(--first) !important;
+}
